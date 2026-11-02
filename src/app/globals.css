@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --color-flood-normal: #10b981;
+  --color-flood-watch: #eab308;
+  --color-flood-warning: #f97316;
+  --color-flood-critical: #dc2626;
+  --color-flood-offline: #64748b;
+  --color-flood-stale: #a855f7;
+  --color-flood-calibration: #0ea5e9;
+  --color-ink: #0b1220;
+  --color-surface: #111a2b;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background:
+    radial-gradient(900px 600px at 12% -8%, #16324f 0%, transparent 60%),
+    radial-gradient(800px 500px at 100% 0%, #1b2a44 0%, transparent 55%),
+    var(--color-ink);
+  color: #e2e8f0;
+  min-height: 100vh;
+}
+
+.card {
+  border-radius: 0.75rem;
+  border: 1px solid rgb(51 65 85 / 0.7);
+  background: rgb(17 26 43 / 0.82);
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.4);
+}
+
+.muted {
+  color: #94a3b8;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Leaflet popups inherit the dark surface so map cards stay readable. */
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: #0f1a2d;
+  color: #e2e8f0;
+  border: 1px solid rgb(71 85 105 / 0.8);
+}
+
+.leaflet-container {
+  background: #0b1220;
+  font: inherit;
+}

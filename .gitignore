@@ -1,0 +1,42 @@
+# dependencies
+node_modules/
+
+# next.js
+.next/
+out/
+next-env.d.ts
+
+# production
+build/
+tsconfig.tsbuildinfo
+
+# embedded postgres (PGlite) data — never commit real measurements
+data/
+*.pgdata/
+
+# env / secrets
+.env
+.env.*
+!.env.example
+*.pem
+
+# test / coverage
+coverage/
+.vitest/
+test-results/
+
+# editor / os
+.DS_Store
+.idea/
+.vscode/
+*.log
+npm-debug.log*
+
+# arduino / platformio build artefacts
+firmware/**/build/
+.pio/
+*.elf
+*.bin
+
+# device wiring + ingestion tokens: never commit a real config.h
+firmware/**/config.h

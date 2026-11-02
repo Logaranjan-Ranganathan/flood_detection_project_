@@ -1,0 +1,46 @@
+{
+  "name": "floodguard",
+  "version": "0.1.0",
+  "private": true,
+  "description": "FloodGuard - IoT flood monitoring and community alert platform",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "tsx scripts/migrate.ts",
+    "db:seed": "tsx scripts/seed.ts"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "0.5.14",
+    "drizzle-orm": "0.45.4",
+    "leaflet": "1.9.4",
+    "lucide-react": "0.468.0",
+    "next": "16.4.3",
+    "pg": "8.16.3",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "react-leaflet": "5.0.0",
+    "recharts": "3.10.1",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/leaflet": "1.9.20",
+    "@types/node": "22.19.0",
+    "@types/pg": "8.15.4",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.1",
+    "drizzle-kit": "0.31.11",
+    "eslint": "9.39.1",
+    "eslint-config-next": "16.4.3",
+    "tailwindcss": "4.3.3",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3",
+    "vitest": "3.2.4"
+  }
+}
